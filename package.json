@@ -2,11 +2,18 @@
   "name": "student-support-agent",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun run --watch index.ts"
+  },
   "private": true,
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@langchain/groq": "^0.2.4",
+    "@langchain/langgraph": "^0.4.9"
   }
 }
